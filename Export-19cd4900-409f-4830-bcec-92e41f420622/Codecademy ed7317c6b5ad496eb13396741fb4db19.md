@@ -1,5 +1,7 @@
 # Codecademy
 
+[Projects:](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Projects%203936c3ed79fd4387aeb019ed4b5859d2.md)
+
 Console
 
 The console is a panel that displays important messages, like errors, for developers. Much of the work the computer does with our code is invisible to us by default. If we want to see things appear on our screen, we can print, or *log*, to our console directly.
@@ -59,6 +61,10 @@ In addition to `console`, there are other [objects built into JavaScript](http
 ---
 
 ## Variables:
+
+Difference between var ||| let ||| const :
+
+[https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/](https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/)
 
 ![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled.png)
 
@@ -163,7 +169,7 @@ Sometimes, you’ll want to check if a variable exists and you won’t necessari
     - `undefined` which represent when a declared variable lacks a value
     - `NaN`, or Not a Number
 
-    Then it is → falsy (false)
+    Then it is → falsy (false) 
 
     ![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%209.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%209.png)
 
@@ -186,7 +192,13 @@ Sometimes, you’ll want to check if a variable exists and you won’t necessari
 - `switch` statement
 A switch statement provides an alternative syntax that is easier to read and write.
 
-- Operators SUMMARY
+- Conditionsl Statements SUmmary
+
+    **CONDITIONAL STATEMENTS**
+
+    Review
+
+    Way to go! Here are some of the major concepts for conditionals:
 
     - An `if` statement checks a condition and will execute a task if that condition evaluates to `true`.
     - `if...else` statements make binary decisions and execute different code blocks based on a provided condition.
@@ -206,6 +218,9 @@ A switch statement provides an alternative syntax that is easier to read and wri
 
 ## Functions:
 
+> Function Declarations are scanned and made available.
+Variable Declarations are scanned and made Undefined.
+
 In JavaScript, there are many ways to create a function. One way to create a function is by using a function declaration. Just like how a variable declaration binds a value to a variable name, a function declaration binds a function to a name, or an identifier.
 
 ![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2014.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2014.png)
@@ -224,14 +239,142 @@ When a function is called, the computer will run through the function’s code a
 
 ![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2017.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2017.png)
 
-> Function Declarations are scanned and made available.
-Variable Declarations are scanned and made Undefined.
-
-### Contexts:
-
 ![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2018.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2018.png)
 
 ![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2019.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2019.png)
+
+Helper Functions
+
+We can also use the return value of a function inside another function. These functions being called within another function are often referred to as *helper functions*. Since each function is carrying out a specific task, it makes our code easier to read and debug if necessary.
+
+![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2020.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2020.png)
+
+Function Expressions
+
+Another way to define a function is to use a *function expression*. To define a function inside an expression, we can use the `function` keyword. In a function expression, the function name is usually omitted. A function with no name is called an *anonymous function*. A function expression is often stored in a variable in order to refer to it.
+
+To declare a function expression:
+
+1. Declare a variable to make the variable’s name be the name, or identifier, of your function. Since the release of ES6, it is common practice to use `const` as the keyword to declare the variable.
+2. Assign as that variable’s value an anonymous function created by using the `function` keyword followed by a set of parentheses with possible parameters. Then a set of curly braces that contain the function body.
+
+![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2021.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2021.png)
+
+![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2022.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2022.png)
+
+> Unlike function declarations, function expressions are not hoisted so they cannot be called before they are defined.
+
+Advantages of function expressions??
+As we’ve seen, function expressions don’t offer much that can’t be achieved with function declarations, but using them can often result in cleaner and more readable code. Their widespread use makes them an essential part of every developer’s toolbox.
+
+Arrow Functions
+
+ES6 introduced *arrow function syntax*, a shorter way to write functions by using the special “fat arrow” `() =>` notation.
+
+Arrow functions remove the need to type out the keyword `function` every time you need to create a function. Instead, you first include the parameters inside the `( )` and then add an arrow `=>` that points to the function body surrounded in `{ }`
+
+![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2023.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2023.png)
+
+Concise Body Arrow Functions
+
+JavaScript also provides several ways to refactor arrow function syntax. The most condensed form of the function is known as *concise body*. We’ll explore a few of these techniques below:
+
+ 1.  Functions that take only a single parameter do not need that parameter to be enclosed in parentheses. However, if a function takes zero or multiple parameters, parentheses are required.
+
+![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2024.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2024.png)
+
+2.  A function body composed of a single-line block does not need curly braces. Without the curly braces, whatever that line evaluates will be automatically returned. The contents of the block should immediately follow the arrow => and the return keyword can be removed. This is referred to as implicit return.
+
+- Functions SUmmarry:
+
+    Review Functions
+
+    Give yourself a pat on the back, you just navigated through functions!
+
+    In this lesson, we covered some important concepts about functions:
+
+    - A *function* is a reusable block of code that groups together a sequence of statements to perform a specific task.
+    - A *function declaration* :
+
+        ![https://content.codecademy.com/courses/learn-javascript-functions/Diagram/declaration.svg](https://content.codecademy.com/courses/learn-javascript-functions/Diagram/declaration.svg)
+
+    - A parameter is a named variable inside a function’s block which will be assigned the value of the argument passed in when the function is invoked:
+
+        ![https://content.codecademy.com/courses/learn-javascript-functions/Diagram/function_parameters.svg](https://content.codecademy.com/courses/learn-javascript-functions/Diagram/function_parameters.svg)
+
+    - To *call* a function in your code:
+
+        ![https://content.codecademy.com/courses/learn-javascript-functions/Diagram/name.svg](https://content.codecademy.com/courses/learn-javascript-functions/Diagram/name.svg)
+
+    - ES6 introduces new ways of handling arbitrary parameters through *default parameters* which allow us to assign a default value to a parameter in case no argument is passed into the function.
+    - To return a value from a function, we use a *return statement*.
+    - To define a function using *function expressions*:
+
+        ![https://content.codecademy.com/courses/learn-javascript-functions/Diagram/expression.svg](https://content.codecademy.com/courses/learn-javascript-functions/Diagram/expression.svg)
+
+    - To define a function using *arrow function notation*:
+
+        ![https://content.codecademy.com/courses/learn-javascript-functions/Diagram/arrow_notation.svg](https://content.codecademy.com/courses/learn-javascript-functions/Diagram/arrow_notation.svg)
+
+    - Function definition can be made concise using concise arrow notation:
+
+        ![https://content.codecademy.com/courses/learn-javascript-functions/Diagram/return.svg](https://content.codecademy.com/courses/learn-javascript-functions/Diagram/return.svg)
+
+    It’s good to be aware of the differences between function expressions, arrow functions, and function declarations. As you program more in JavaScript, you’ll see a wide variety of how these function types are used.
+
+![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2025.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2025.png)
+
+## Scope:
+
+Scope defines where variables can be accessed or referenced. While some variables can be accessed from anywhere within a program, other variables may only be available in a specific context.
+
+Global Scope : In global scope, variables are declared outside of blocks. These variables are called global variables. Because global variables are not bound inside a block, they can be accessed by any code in the program, including code in blocks.
+
+![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2026.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2026.png)
+
+Block Scope : Variables that are declared w ith block scope are known as local variables because they are only available to the code that is part of the same block.
+
+![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2027.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2027.png)
+
+Scope Pollution  : Scope pollution is when we have too many global variables that exist in the global namespace, or when we reuse variables across different scopes. Scope pollution makes it difficult to keep track of our different variables and sets us up for potential accidents. For example, globally scoped variables can collide with other variables that are more locally scoped, causing unexpected behavior in our code.
+
+- Tight Scoping :
+
+    Tightly scoping your variables will greatly improve your code in several ways:
+
+    - It will make your code more legible since the blocks will organize your code into discrete sections.
+    - It makes your code more understandable since it clarifies which variables are associated with different parts of the program rather than having to keep track of them line after line!
+    - It’s easier to maintain your code, since your code will be modular.
+    - It will save memory in your code because it will cease to exist after the block finishes running.
+
+        ![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2028.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2028.png)
+
+- Scope Summarryyyy
+
+    - **Scope** is the idea in programming that some variables are accessible/inaccessible from other parts of the program.
+    - **Blocks** are statements that exist within curly braces `{}`.
+    - **Global scope** refers to the context within which variables are accessible to every part of the program.
+    - **Global variables** are variables that exist within global scope.
+    - **Block scope** refers to the context within which variables that are accessible only within the block they are defined.
+    - **Local variables** are variables that exist within block scope.
+    - **Global namespace** is the space in our code that contains globally scoped information.
+    - **Scope pollution** is when too many variables exist in a namespace or variable names are reused.
+
+![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2029.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2029.png)
+
+---
+
+## Arrays:
+
+Arrays are JavaScript’s way of making lists. Arrays can store any data types (including strings, numbers, and booleans). Like lists, arrays are ordered, meaning each item has a numbered position.
+
+//======================================================================================================
+
+### Contexts:
+
+![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2030.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2030.png)
+
+![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2031.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2031.png)
 
 ```jsx
 console.log(myName)
@@ -256,15 +399,15 @@ Every JS program will have 2 stages of execution :
     - Execution will start line by line.
     - Variables will be assigned its value ( if defined) , and functions will be called ( in a whole new context of its own )
 
-![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2020.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2020.png)
+![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2032.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2032.png)
 
 Code :
 
-![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2021.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2021.png)
+![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2033.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2033.png)
 
 Memory Creation Phase
 
-![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2022.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2022.png)
+![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2034.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2034.png)
 
 Execution Phase
 
@@ -276,8 +419,8 @@ Execution Phase
 
 Call stack is known by many names like : Execution stack | Program Stack | Control stack | Runtime Stack | Machine Stack .
 
-![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2023.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2023.png)
+![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2035.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2035.png)
 
 Call Stack of any JS program
 
-![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2024.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2024.png)
+![Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2036.png](Codecademy%20ed7317c6b5ad496eb13396741fb4db19/Untitled%2036.png)
