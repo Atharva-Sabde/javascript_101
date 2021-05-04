@@ -1,0 +1,9 @@
+﻿Method Name,Property
+.toUpperCase(),changes the string to uppercase
+.trim(),removes the whitespaces from both the sides of string.
+,
+Math.random(),Prints a random number between 0 and 1
+Math.floor(),"takes a decimal number, and rounds down to the nearest whole number"
+Math.ceil(),returns the smallest integer greater than or equal to a decimal number.
+Number.isInteger(),Checks whether number is whole integer or not
+,
